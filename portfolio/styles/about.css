@@ -1,5 +1,5 @@
 body{
-    background-image: url(../images/bg.jpg);
+    background-image: url(../images/bg7.jpg);
     background-size: cover;
 }
 .top p{
@@ -47,9 +47,7 @@ body{
 }
 
 
-.title{
-    
-}
+
 .title h1{
     margin-top: 40px;
     color: gray;
@@ -72,6 +70,12 @@ body{
     border-radius: 50%;
     width: 300px;
     height: 300px;
+    transition: all 0.5s ease-in-out;
+}
+.center img:hover{
+    transform: scale(1.1);
+    translate: 0px 60px;
+
 }
 .center .content h1{
     color: white;
@@ -81,13 +85,17 @@ body{
 .content p{
     margin-top: -20px;
     color: white;
-    font-size: 15px;
+    font-size: 18px;
     font-family: cursive;
-    max-width: 500px;
+    max-width: 550px;
 }
 .content p span{
     color: springgreen;
     font-weight: bold;
+    transition: all 0.4s ease;
+}
+.content p span:hover{
+     font-size: 20px;
 }
 
 .exp h1{
@@ -103,9 +111,11 @@ body{
     max-width: 75%;
 }
 
-
+.botcont{
+    background-image: url(../images/bg4.jpg);
+    background-size: cover;
+}
 .bottom{
-    background-color: black;
     display: flex;
     padding: auto;
     margin: auto;
@@ -145,7 +155,7 @@ padding: 5px;
 footer{
     display: flex;
     justify-content: space-evenly;
-    background-color: black;
+    
     width: 100%;
 }
 footer p{
