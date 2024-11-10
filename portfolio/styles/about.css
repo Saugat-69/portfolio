@@ -1,0 +1,168 @@
+body{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+}
+.top p{
+    padding: 12px ,12px ,12px ,12px;
+    margin: 10px 10px;
+    color: white;
+    font-size: 40px;
+    font-family: monospace;
+    text-align: center;
+}
+.top nav{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    padding: auto;
+    margin: auto;
+    margin-top: 40px;
+}
+.name p{
+    color: white;
+    font-family: cursive;
+    font-size: 40px;
+    transition: all 0.4s ease-in;
+}
+.name p:hover{
+    font-size: 42px;
+    translate: 0 20px;
+}
+.top nav .links a{
+    padding: 20px 20px 20px 20px;
+    margin: auto;
+    font-style: normal;
+    font-family: cursive;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s ease-in-out;
+}
+.top nav .links a:hover{
+    color: gray;
+    border-bottom: 1px solid black;
+    transition: all 0.5s ease-in-out;
+    font-size: 27px;
+}
+
+
+.title{
+    
+}
+.title h1{
+    margin-top: 40px;
+    color: gray;
+    font-size: 18px;
+    font-family: cursive;
+    text-align: center;
+}
+.title h2{
+    margin-top: -20px;
+    color: white;
+    font-size: 45px;
+    font-family: cursive;
+    text-align: center;
+}
+.center{
+    display: flex;
+    justify-content: space-evenly;
+}
+.center img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+.center .content h1{
+    color: white;
+    font-size: 40px;
+    font-family: cursive;
+}
+.content p{
+    margin-top: -20px;
+    color: white;
+    font-size: 15px;
+    font-family: cursive;
+    max-width: 500px;
+}
+.content p span{
+    color: springgreen;
+    font-weight: bold;
+}
+
+.exp h1{
+    text-align: center;
+}
+.exp .item{
+    margin-left: 170px;
+    padding: -10px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 3px solid black;
+    border-radius: 30px;
+    max-width: 75%;
+}
+
+
+.bottom{
+    background-color: black;
+    display: flex;
+    padding: auto;
+    margin: auto;
+    margin-top: 500px;
+    width: 100%;
+    justify-content: center;
+    bottom: 0;
+}
+.box{
+    padding: auto;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.box h1{
+    font-size: 25   px;
+color: white;
+padding: 5px;
+}
+.box ul li{
+    padding: 5px;
+    list-style: none;
+}
+.box p{
+    color: gray;
+}
+.box ul li a{
+    padding: auto;
+    text-decoration: none;
+    color: gray;
+    font-size: 15px;
+}
+.box ul li a:hover{
+    color: white;
+    font-size: 18px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    width: 100%;
+}
+footer p{
+    padding: 20px 5px 5px 20px;
+    color: white;
+    font-size: medium;
+    font-family:'Times New Roman', Times, serif;
+}
+footer .language{
+    padding: 20px 5px 5px 20px;
+    color: black;
+    font-size: medium;
+    font-family:'Times New Roman', Times, serif;
+    stroke: gray;
+    stroke-width: 10px;
+}
+.box i{
+    color: white;
+    padding: 10px;
+}
