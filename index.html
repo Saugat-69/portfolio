@@ -1,98 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saugat Gaire</title>
-    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./homepage.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Saugat Gaire | Creative Developer</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="homepage.css">
 </head>
+
 <body>
-    <div class="top">
-        
-        <nav>
-            <div class="name">
-                <p>Saugat Gaire</p>
-            </div>
-            <div class="links">
-            <a href="index.html">Home</a>
-            <a href="./about.html">About</a>
-           <a href="./contact.html">Contact</a>
-            <a href="#">Projects</a>
-            </div>
-        </nav>
-    </div>
 
-    <section id="home">
-    <div class="center">
-        <div class="image">
-            <img src="../images/profile1.jpg" alt="">
-        </div>
-        <div class="content">
-                <h1>Hi there, it's me saugat!</h1>
-                <br>
-                <h2>A  passionate <span>web developer</span> &  <span>designer</span></h2>
-                <button id="dwn">Download CV</button>
-                <button id="cnt">Contact me</button>
-                <br>
-               <a href="https://github.com/Saugat-69"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a> 
-                <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-                <a href="https://www.facebook.com/profile.php?id=100068671606053"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+    <!-- Background Animation -->
+    <div class="background-animation"></div>
 
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Saugat<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
-        
-    </div>
-</section>
-<div class="botcont">
-    <div class="bottom">
-        
-        <div class="legal box">
-            <h1>Legal</h1>
-            <ul>
-                <li><a href="#">Terms of use</a></li>
-                <li><a href="#">Privacy policy</a></li>
-                <li><a href="#">Copyright information</a></li>
-                <li><a href="#">Lisence agrement</a></li>
-            </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
+            <h3 class="greeting">Hello, I'm</h3>
+            <h1 class="name">Saugat Gaire</h1>
+            <h2 class="title">I am a <span class="typing-text"></span></h2>
+            <p class="description">
+                A passionate developer crafting beautiful, functional, and user-centric digital experiences.
+                Let's turn your vision into reality.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn primary">View My Work</a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/Saugat-69" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100068671606053" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+            </div>
         </div>
-        <div class="support box">
-            <h1>Support</h1>
-            <ul>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Search guide</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+        <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+            <div class="img-container">
+                <img src="images/profile1.jpg" alt="Saugat Gaire">
+            </div>
         </div>
-        
-        <div class="social box">
-            <h1>SOCIAL MEDIA</h1>
-            <br>
-            <a href="https://github.com/Saugat-69"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-            <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
-            <a href="https://www.facebook.com/profile.php?id=100068671606053"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
-            <p>Get in touch with me...</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-header" data-aos="fade-up">
+            <h2>About Me</h2>
+            <div class="underline"></div>
         </div>
+        <div class="about-container">
+            <div class="about-img" data-aos="zoom-in">
+                <img src="images/profile1.jpg" alt="About Me">
+            </div>
+            <div class="about-text" data-aos="fade-left">
+                <h3>Creative Web Developer based in Nepal</h3>
+                <p>
+                    I am a dedicated web developer with a keen eye for design and a strong foundation in coding.
+                    My journey in tech allows me to bridge the gap between aesthetics and functionality.
+                    I love solving complex problems and learning new technologies to stay ahead in this fast-paced
+                    industry.
+                </p>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-user"></i>
+                        <span>Freelance: Available</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Location: Nepal</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email: saugatgaire50@gmail.com</span>
+                    </div>
+                </div>
+                <a href="#" class="btn primary" id="dwn-cv">Download CV <i class="fas fa-download"></i></a>
+            </div>
         </div>
-        <footer>
-    
-            <p>Copyright &copy; 2081-2091 Saugat Gaire. All rights reserved.</p>
-            <div class="language">
-                <select name="lang" id="lang">
-                <option value="eng">English</option>
-                <option value="nep">Nepali</option>
-                <option value="chin">Chinese</option>
-                <option value="spain">Spanish</option>
-            </select>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-header" data-aos="fade-up">
+            <h2>My Skills</h2>
+            <div class="underline"></div>
         </div>
-            
-        </footer>
-    
-    </div>
-    
+        <div class="skills-container">
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="0">
+                <i class="fab fa-html5" style="color: #e34f26;"></i>
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fab fa-css3-alt" style="color: #264de4;"></i>
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fab fa-js" style="color: #f7df1e;"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fab fa-react" style="color: #61dafb;"></i>
+                <h3>React</h3>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                <i class="fab fa-git-alt" style="color: #f05032;"></i>
+                <h3>Git</h3>
+            </div>
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                <i class="fas fa-mobile-alt" style="color: #a8dba8;"></i>
+                <h3>Responsive</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Featured Projects</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card" data-aos="flip-left">
+                <div class="project-img">
+                    <img src="images/bg2.jpg" alt="Project 1">
+                    <div class="overlay">
+                        <a href="#" class="btn-icon"><i class="fas fa-link"></i></a>
+                        <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio website with modern animations and responsive design.</p>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card" data-aos="flip-left" data-aos-delay="100">
+                <div class="project-img">
+                    <img src="images/bg4.jpg" alt="Project 2">
+                    <div class="overlay">
+                        <a href="#" class="btn-icon"><i class="fas fa-link"></i></a>
+                        <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>E-Commerce UI</h3>
+                    <p>A sleek and user-friendly interface for an online store.</p>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card" data-aos="flip-left" data-aos-delay="200">
+                <div class="project-img">
+                    <img src="images/bg7.jpg" alt="Project 3">
+                    <div class="overlay">
+                        <a href="#" class="btn-icon"><i class="fas fa-link"></i></a>
+                        <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Weather App</h3>
+                    <p>Real-time weather application using OpenWeatherMap API.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Get In Touch</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <h3>Let's Talk</h3>
+                <p>Have a project in mind or just want to say hi? Feel free to reach out!</p>
+                <div class="info-box">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <div class="text">
+                        <h4>Email</h4>
+                        <p>saugatgaire50@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="icon"><i class="fas fa-phone"></i></div>
+                    <div class="text">
+                        <h4>Phone</h4>
+                        <p>9862334005</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="text">
+                        <h4>Location</h4>
+                        <p>Kathmandu, Nepal</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm" data-aos="fade-left">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn primary">Send Message <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Saugat<span>.</span></div>
+            <p>Copyright &copy; 2024 Saugat Gaire. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
-</html>
-    
-</body>
 </html>
