@@ -30,6 +30,18 @@
     <!-- Background Animation -->
     <div class="background-animation"></div>
 
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="logo">Saugat<span>.</span></div>
@@ -99,7 +111,7 @@
                     </div>
                     <div class="info-item">
                         <i class="fas fa-map-marker-alt"></i>
-                        <span>Location: Nepal</span>
+                        <span>Location: Nawalpur, Nepal</span>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
@@ -130,17 +142,19 @@
                 <i class="fab fa-js" style="color: #f7df1e;"></i>
                 <h3>JavaScript</h3>
             </div>
+            <!-- Removed React, added Photoshop/Graphic Designing -->
             <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
-                <i class="fab fa-react" style="color: #61dafb;"></i>
-                <h3>React</h3>
+                <i class="fas fa-palette" style="color: #ff00c8;"></i>
+                <h3>Photoshop/Graphic Designing</h3>
             </div>
             <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
                 <i class="fab fa-git-alt" style="color: #f05032;"></i>
                 <h3>Git</h3>
             </div>
-            <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
-                <i class="fas fa-mobile-alt" style="color: #a8dba8;"></i>
-                <h3>Responsive</h3>
+            <!-- Added Game Development -->
+            <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+                <i class="fas fa-gamepad" style="color: #a8dba8;"></i>
+                <h3>Game Development</h3>
             </div>
         </div>
     </section>
@@ -152,8 +166,36 @@
             <div class="underline"></div>
         </div>
         <div class="projects-grid">
-            <!-- Project 1 -->
+            <!-- Project 1: Team Up Pro -->
             <div class="project-card" data-aos="flip-left">
+                <div class="project-img">
+                    <img src="images/bg8.jpg" alt="Team Up Pro Screenshot">
+                    <div class="overlay">
+                        <a href="https://team-up-pro.onrender.com" target="_blank" class="btn-icon"><i
+                                class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Team Up Pro</h3>
+                    <p>A collaborative platform for team management.</p>
+                </div>
+            </div>
+            <!-- Project 2: TeamStack -->
+            <div class="project-card" data-aos="flip-left" data-aos-delay="100">
+                <div class="project-img">
+                    <img src="images/bg9.jpg" alt="TeamStack Screenshot">
+                    <div class="overlay">
+                        <a href="https://teamstack.onrender.com" target="_blank" class="btn-icon"><i
+                                class="fas fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>TeamStack</h3>
+                    <p>An efficient project stacking and tracking tool.</p>
+                </div>
+            </div>
+            <!-- Project 3: Portfolio (Previous) -->
+            <div class="project-card" data-aos="flip-left" data-aos-delay="200">
                 <div class="project-img">
                     <img src="images/bg2.jpg" alt="Portfolio Website Screenshot">
                     <div class="overlay">
@@ -166,34 +208,8 @@
                     <p>A personal portfolio website with modern animations and responsive design.</p>
                 </div>
             </div>
-            <!-- Project 2 -->
-            <div class="project-card" data-aos="flip-left" data-aos-delay="100">
-                <div class="project-img">
-                    <img src="images/bg4.jpg" alt="E-Commerce UI Screenshot">
-                    <div class="overlay">
-                        <a href="#" class="btn-icon"><i class="fas fa-link"></i></a>
-                        <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>E-Commerce UI</h3>
-                    <p>A sleek and user-friendly interface for an online store.</p>
-                </div>
-            </div>
-            <!-- Project 3 -->
-            <div class="project-card" data-aos="flip-left" data-aos-delay="200">
-                <div class="project-img">
-                    <img src="images/bg7.jpg" alt="Weather App Screenshot">
-                    <div class="overlay">
-                        <a href="#" class="btn-icon"><i class="fas fa-link"></i></a>
-                        <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="project-info">
-                    <h3>Weather App</h3>
-                    <p>Real-time weather application using OpenWeatherMap API.</p>
-                </div>
-            </div>
+
+
         </div>
     </section>
 
@@ -225,7 +241,7 @@
                     <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
                     <div class="text">
                         <h4>Location</h4>
-                        <p>Kathmandu, Nepal</p>
+                        <p>Nawalpur, Nepal</p>
                     </div>
                 </div>
             </div>

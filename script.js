@@ -100,3 +100,109 @@ if (contactForm) {
         window.location.href = `mailto:saugatgaire50@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
     });
 }
+
+// Custom Cursor
+const cursorDot = document.querySelector('.cursor-dot');
+const cursorOutline = document.querySelector('.cursor-outline');
+
+// Only run cursor code if elements exist
+if (cursorDot && cursorOutline) {
+    let mouseX = 0;
+    let mouseY = 0;
+    let outlineX = 0;
+    let outlineY = 0;
+
+    // Track mouse position
+    document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+
+        // Update dot position immediately
+        cursorDot.style.transform = `translate(${mouseX - 4}px, ${mouseY - 4}px)`;
+    });
+
+    // Smooth following effect for outline
+    function animateOutline() {
+        // Lerp (linear interpolation) for smooth following
+        outlineX += (mouseX - outlineX) * 0.25;
+        outlineY += (mouseY - outlineY) * 0.25;
+
+        cursorOutline.style.transform = `translate(${outlineX - 20}px, ${outlineY - 20}px)`;
+
+        requestAnimationFrame(animateOutline);
+    }
+
+    animateOutline();
+
+    // Add hover effect to all interactive elements
+    const interactiveElements = document.querySelectorAll('a, button, .btn, .project-card, .skill-card, input, textarea, .hamburger');
+
+    interactiveElements.forEach(element => {
+        element.addEventListener('mouseenter', () => {
+            cursorDot.classList.add('hover');
+            cursorOutline.classList.add('hover');
+        });
+
+        element.addEventListener('mouseleave', () => {
+            cursorDot.classList.remove('hover');
+            cursorOutline.classList.remove('hover');
+        });
+    });
+}
+
+// Scroll Progress Indicator
+const scrollProgress = document.querySelector('.scroll-progress');
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollPercentage = (scrollTop / scrollHeight) * 100;
+
+    if (scrollProgress) {
+        scrollProgress.style.width = scrollPercentage + '%';
+    }
+});
+
+// Scroll to Top Button
+const scrollTopBtn = document.getElementById('scrollTop');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        scrollTopBtn.classList.add('active');
+    } else {
+        scrollTopBtn.classList.remove('active');
+    }
+});
+
+if (scrollTopBtn) {
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+// Active Navigation on Scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinksElements = document.querySelectorAll('.nav-links li a');
+
+window.addEventListener('scroll', () => {
+    let current = '';
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (pageYOffset >= (sectionTop - 200)) {
+            current = section.getAttribute('id');
+        }
+    });
+
+    navLinksElements.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+        }
+    });
+});
